@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='about.css')}}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{url_for('home')}}">HOME</a></li>
+                <li><a href="{{url_for('predictionpage')}}">PREDICT</a></li>
+                <li><a href="{{url_for('about')}}">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-section">
+            <h2 id="h2">Project Members</h2>
+            <ul id="Members">
+                <li>Gottam Abhishake</li>
+                <li>Venishetty Sangeetha</li>
+                <li>Mohammad Rehana Tabassum</li>
+                <li>Raghupathi Bhukya</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

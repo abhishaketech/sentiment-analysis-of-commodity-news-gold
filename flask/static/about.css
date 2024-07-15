@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    background: url('template2.jpeg') no-repeat center center fixed;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#about-section {
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    color: black;
+}
+
+#h2 {
+    margin-bottom: 20px;
+    color: #f4f4f4;
+}
+
+#Members li {
+    color: gold;
+    font-size: 18px;
+    margin: 5px 0;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#Members li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#Members li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#Members li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+#Members li:nth-child(4) {
+    animation-delay: 0.4s;
+}
